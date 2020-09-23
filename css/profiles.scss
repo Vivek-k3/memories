@@ -1,0 +1,193 @@
+$white: #EBECEC;
+$timing: 10s;
+
+
+body {
+    background: black;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color: #6D6D6D;
+    h1 {
+        color: #fff;
+        font-size: 50px;
+    }
+    a {
+        padding: 5px 15px;
+        color: #6D6D6D;
+        font-size: 17px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #6D6D6D;
+        transition: all 300ms ease;
+        &:hover {
+            color:  $white;
+            border: 1px solid $white;
+        }
+    }
+    opacity: 0;
+    animation: fade-in 500ms ease 200ms 1 forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.logo {
+    width: 110px; height:60px;
+    margin: 15px 60px;
+    background: url('../img/friendslogo.jpg');
+    background-size: cover;
+}
+
+.wrapper {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.profile {
+    &-wrap {
+        display: flex;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 40px auto;
+    }
+    width: 150px;
+    &-icon {
+        width: 150px; height:150px;
+        border: 6px solid #1f1f1f;
+        transition: all 300ms ease;
+    }
+    &-name {
+        margin: 20px 0;
+        line-height: 1.25em;
+        transition: all 300ms ease;
+    }
+}
+
+.profile:hover .profile-icon {
+    border: 6px solid $white;
+}
+.profile:hover .profile-name {
+    color: $white;
+}
+
+
+.profile1{
+    background-image: url('https://i.gyazo.com/aa72f20bdacb2e23beb7b065a6b43739.png');
+    background-size: cover;
+
+}
+
+.profile2 {
+    background-image: url('https://i.gyazo.com/aa72f20bdacb2e23beb7b065a6b43739.png');
+    background-size: cover;
+
+}
+
+.profile3 {
+    background-image: url('https://i.gyazo.com/aa72f20bdacb2e23beb7b065a6b43739.png');
+    background-size: cover;
+
+}
+.profile4 {
+    background-image: url('https://i.gyazo.com/aa72f20bdacb2e23beb7b065a6b43739.png');
+    background-size: cover;
+}
+
+.profile5 {
+    background-image: url('https://i.gyazo.com/aa72f20bdacb2e23beb7b065a6b43739.png');
+    background-size: cover;
+
+}
+
+.profile6 {
+
+    background-image: url('https://i.gyazo.com/aa72f20bdacb2e23beb7b065a6b43739.png');
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'oswald';
+    src: url('../font/GABRWFFR.TTF');
+}
+
+
+
+.pinlogin .pinlogin-field
+{
+	box-sizing:border-box;
+    
+    
+	
+	display:inline-block;
+	
+	width: 40px;
+	height: 40px;
+	
+	padding: 5px;
+	
+	margin: 0 10px;
+	
+	border:1px solid #ccc;
+	
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;	
+	border-radius: 2px;
+	
+	text-align:center;
+
+}
+
+.pinlogin .pinlogin-field:first-of-type {
+    margin-left: 0;
+}
+
+.pinlogin .pinlogin-field:last-of-type {
+    margin-right: 0;
+}
+
+.pinlogin .pinlogin-field:read-only
+{
+	border:1px solid #ddd;
+	background:#fafafa;
+	cursor:default;
+}
+
+.pinlogin .pinlogin-field.invalid
+{
+	border:1px solid red;
+	color:red;
+}
+
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	min-width: 300px;
+	
+	transform: translate(-50%,-50%);
+	
+	margin: 0 auto;
+	padding: 20px;
+	
+	text-align: center;
+	
+	background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: 0px 0px 6px -1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 6px -1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 6px -1px rgba(50, 50, 50, 0.75);
+}
