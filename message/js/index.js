@@ -1,6 +1,6 @@
 this.$dom = {};
 this.$dom.animatedText = document.createElement('div');
-this.text = "Hey Banda.... Hope we are together at this part of time. But Odds are against us..      Sooorrrry!! nijam cheppali ante nenu marchipoya ra Birthday, One day lo cheyalsi vachindhi so it may be not that good!! But my wishes are as good as your INNER HEART";  // MESSAGE AREA , THIS CAN BE CHANGED FROM YOUR MESSAGE :)
+this.text = "Hey Banda.... Hope we are together at this part of time. But Odds are against us..      Chala takkuva time unde ra.., One day lo cheyalsi vachindhi so it may be not that good!! But my wishes are as pure as your INNER HEART Missing you a lot daa..... Lets catch up sometime very soon and will rock in your way for sure. Aythe mari continue chedham konni elements phone lo baguntai konni laptop lo so redu chudu responsive desgin cheyadaniki time lekapaiii.... Okay!! :) " ;  // MESSAGE AREA , THIS CAN BE CHANGED FROM YOUR MESSAGE :)
 this.$dom.container = document.getElementById('container');
 this.$dom.container.appendChild(this.$dom.animatedText);
 animateText();
