@@ -1,0 +1,22 @@
+{
+  "name": "birthdays",
+  "version": "0.0.1",
+  "description": "The trail website for social birthday gifts",
+  "main": "profiles.html",
+  "scripts": {
+    "test": "start",
+    "lite": "lite-server"
+    
+  },
+  "author": "Vivek K Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "lite-server": "^2.5.4",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "bootstrap4": "0.0.1-security"
+  }
+}
