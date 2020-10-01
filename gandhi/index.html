@@ -20,6 +20,60 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+  <style>
+
+#btn {
+  background:seagreen;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  color:black;
+  font-size: 40px;
+  font-family: 'Cookie', cursive;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid black;
+}
+  </style>
     
 </head>
 
@@ -51,15 +105,14 @@
         <button id="reset" data-bound="true"><span></span><span id="btndis">HODOR</span></button>
 
         <article>
-        <p id="text">Hey Tom Marvalo Riddle or "The Lord Volmorte" may be anything but for me you are that same old man, the Old Boondhi guy who is annoying but sweet, who is mad but sane, who is proposterous but kind.</p>
+        <p id="text">Hey Tom Marvalo Riddle or "The Lord Volmorte" may be anything but for me you are that same old man, the Old Boondhi guy who is annoying but sweet, who is mad but sane, who is 
+            preposterous but kind. Love the weired in you. Hate you a lot Dear...</p>
         </article>
 
     
     </div>  
-    <div>
-        <button  class=""onclick="location.href='quote.html'">Check This Out!</button>
-    </div> 
-
+     <div class="align-items-center"><button id="btn"><div id="btn"onclick="location.href='quote.html'"><span class="noselect">And on the Occasion...</span><div id="circle"></div></div></button>
+    </div>
     <div class="">
         <footer id="footer-main">
             <div >
