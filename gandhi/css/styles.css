@@ -1,0 +1,108 @@
+html, body {
+  background: black;
+}
+
+.jumbo {
+  padding: 40 400;
+  overflow: hidden;
+  background-size: cover;
+  color: chocolate;
+  font-weight: 10000;
+  font-size: medium;
+  background-image: url("../img/ghost.jpeg");
+  background-position: center;
+  align-items: center;
+}
+
+.carousel {
+  background-color: black;
+  padding: 20px;
+  perspective: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel > * {
+  flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.carousel figure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.containe {
+  background-color: black;
+}
+.containe p {
+  padding: 1em;
+  font-family: monospace;
+  font-size: 2em;
+}
+.containe button {
+  margin: auto;
+  text-align: center;
+  display: block;
+  width: 250px;
+  height: 70px;
+  background: whitesmoke;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 2em;
+}
+.containe article {
+  width: 80%;
+  margin: auto;
+  padding-top: 70;
+}
+
+#footer-main {
+  position: relative;
+  background: #222;
+  color: white;
+  font-size: 20px;
+  padding: 10;
+  font-family: "Wire One", sans-serif;
+}
+
+.fd {
+  padding: 10 10 10 10;
+}
+
+/*# sourceMappingURL=styles.css.map */
